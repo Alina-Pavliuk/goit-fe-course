@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Playfair Display", "Arial", sans-serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+.page-header {
+    margin-bottom: 98px;
+}
+.page-nav {
+    padding: 70px 0;
+}
+.site-navigation {
+    display: inline-block;
+    vertical-align: middle;
+    width: 900px;
+    list-style: none;
+    text-align: center; 
+    margin: 0;
+    padding: 0;
+
+}
+.site-navigation li {
+    display: inline-block;
+}
+.site-navigation li:not(:last-child){
+    margin-right: 120px;
+}
+.site-navigation a {
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {      
+    color: #44b6f5;
+}
+.good-time {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+article {
+    display: inline-block;
+    width: 420px;
+    margin: 0 0 126px 0;
+    text-align: left;
+}
+article:nth-of-type(odd) {
+    margin-right: 60px;
+}
+article:nth-last-of-type(-n + 2) {
+    margin-bottom: 0;
+}
+.article-images {
+    margin-bottom: 28px;
+}
+.occupation {
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 17px;
+    color: #b4ad9e;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 22px;
+}
+.title-article {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0 0 24px 0;
+}
+.article-about {
+   font-size: 14px;
+   margin: 0;
+}
+div {
+    width: 900px;
+}
+button {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    border: 1px solid #626262;
+    margin: 82px auto 21px;
+    padding: 14px 34px;
+}
+.visually-hidden:not(:focus):not(:active),input[type="checkbox"].visualy-hidden,input[type="radio"].visualy-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
