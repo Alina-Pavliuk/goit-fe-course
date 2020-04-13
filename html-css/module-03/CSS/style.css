@@ -95,10 +95,12 @@ button {
     font-size: 20px;
     line-height: 24px;
     border: 1px solid #626262;
-    margin: 82px auto 21px;
+    margin: 50px auto 70px;
     padding: 14px 34px;
 }
-.visually-hidden:not(:focus):not(:active),input[type="checkbox"].visualy-hidden,input[type="radio"].visualy-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
