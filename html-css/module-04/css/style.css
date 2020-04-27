@@ -20,66 +20,66 @@ body {
     margin: 0 auto;
 }
 .logo {
-    display: inline-block;
     font-size: 30px;
     color: #555252;
     line-height: 32px;
     text-transform: uppercase;
     font-weight: 100;
-    padding-top: 32px;
+    text-decoration: none;
+    width: 640px;
+    float: left;
 }
 .logo::first-letter {
     color: #1abc9c;
     font-weight: bold;   
 }
 header {
-    padding-bottom: 90px;
+    padding: 32px 0 90px 0;
 }
-.cite-navigation {
+a {
+    display: block;
+}
+.site-navigation {
     float: right;
     list-style: none;
-    padding-top: 38px;
+    padding: 7px 0 0 0;
 }
-.cite-navigation-item {
+.site-navigation-item {
     float: left;
 }
-.cite-navigation-item:not(:last-child) {
-    margin-right: 35px;
+.site-navigation-item:not(:last-child) {
+    margin-right: 34px;
 }
-.cite-navigation a {
+.site-navigation a {
     font-size: 14px;
     font-weight: bold;
     color: #0f0101;
     text-transform: uppercase;
     text-decoration: none;
 }
-.cite-navigation a:hover,
-.cite-navigation a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
     color: #1abc9c;
 }
-.products h2, .news h2 {
+.section-content {
+    padding-bottom: 98px;
+}
+.section-title {
    font-size: 48px;
    font-weight: 600;
    color: #515151;
    text-align: center;
    text-transform: uppercase;
+   margin-bottom: 100px;
 }
-.products {
-    padding-bottom: 98px;
-}
-.products h2::after,
-.news h2::after {
+
+.section-title::after {
    display: block; 
    width: 164px;
    height: 7px;
    background-color: #4ec6ab;
    content: '';
-}
-.products h2::after {
-    margin: 20px auto 92px;
-}
-.news h2::after {
-    margin: 19px auto 82px;
+   margin: 19px auto 0;
 }
 .products-list {
     list-style: none;
@@ -123,18 +123,17 @@ header {
 .products-list-item:focus .price {
     background-color: #7fd9c7;  
 }
+
 .price {
     width: 54px;
     color: #ffffff;
-    background: #8c8c8c;
+    background-color: #8c8c8c;
     float: right;
     padding: 4px 0;
     text-align: center;
 }
 /* <!--section two--> */
-.news {
-    padding-bottom: 80px;
-}
+
 .news-list {
     list-style: none; 
     font-family: "Open Sans","Source Sans Pro", "Raleway", sans-serif;
@@ -146,6 +145,7 @@ header {
     line-height: 26px;
     font-weight: 600;
     text-align: left;
+    margin-bottom: 25px;
 }
 .news-list-item h4::after {
     display: block;
@@ -153,7 +153,6 @@ header {
     width: 136px;
     height: 3px;
     background-color: #4ec6ab;
-    margin: 11px 0 14px;
 }
 .text-news {
     font-size: 14px;
@@ -168,17 +167,19 @@ header {
 .news-list-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-.news-button {
+.news-link {
     font-size: 16px;
     font-weight: 100;
     color: #ffffff;
     background-color: #4ec6ab;
     border-radius: 3px;
     width: 160px;
-    height: 51px;
+    line-height: 51px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
-.news-button:hover,
-.news-button:focus  {
+.news-link:hover,
+.news-link:focus  {
     background-color: #3cfaaa;
 }
