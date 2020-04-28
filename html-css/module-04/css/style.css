@@ -26,7 +26,6 @@ body {
     text-transform: uppercase;
     font-weight: 100;
     text-decoration: none;
-    /* width: 640px; */
     float: left;
 }
 .logo::first-letter {
@@ -106,7 +105,8 @@ a {
 .category {
     background: #323232;
 }
-.category:hover {
+.products-list-item:hover .category,
+.products-list-item:focus .category {
     background: #1abc9c;
 }
 .price,
@@ -118,20 +118,10 @@ a {
 }
 .product-name {
     float: left;
-    /* background: #323232;  */
     color: #ffffff;
     width: 201px;
     padding: 4px 0 4px 13px;   
 }
-/* .products-list-item:hover .product-name,
-.products-list-item:focus .product-name {
-    background-color: #1abc9c;
-}
-.products-list-item:hover .price,
-.products-list-item:focus .price {
-    background-color: #7fd9c7;  
-} */
-
 .price {
     width: 54px;
     color: #ffffff;
@@ -148,14 +138,14 @@ a {
     color: #555252;
     padding: 0;
 }
-.news-list-item h4 {
+.news-about {
     font-size: 18px;
     line-height: 26px;
     font-weight: 600;
     text-align: left;
     margin-bottom: 25px;
 }
-.news-list-item h4::after {
+.news-about::after {
     display: block;
     content: '';
     width: 136px;
