@@ -36,7 +36,7 @@ a {
 }
 
 header {
-  padding: 30px 245px;
+  padding: 30px 0;
 }
 
 .logo {
@@ -215,6 +215,7 @@ img {
 
 .collection-list-item {
   float: left;
+  width: 255px;
 }
 
 .collection-list-item:not(:last-child) {
@@ -313,7 +314,6 @@ img {
 .product-name {
   float: left;
   color: #ffffff;
-  width: 201px;
   padding: 4px 0 4px 13px;
 }
 
