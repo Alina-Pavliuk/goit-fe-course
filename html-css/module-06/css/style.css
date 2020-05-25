@@ -72,11 +72,7 @@ a.logo:hover {
   padding: 0;
 }
 
-.site-navigation__item {
-  margin-right: 58px;
-}
-
-.site-navigation__item::after {
+.site-navigation__item a::after {
   display: block;
   content: "";
   height: 3px;
@@ -87,9 +83,13 @@ a.logo:hover {
   transition: 0.2s linear;
 }
 
-.site-navigation__item:hover::after,
-.site-navigation__item:focus::after {
+.site-navigation__item a:hover::after,
+.site-navigation__item a:focus::after {
   opacity: 1;
+}
+
+.site-navigation__item:not(:last-child) {
+  margin-right: 58px;
 }
 
 .site-navigation__item a {
@@ -122,6 +122,7 @@ a.logo:hover {
   color: var(--main-font-color);
   text-align: center;
   padding-bottom: 90px;
+  text-transform: uppercase;
 }
 
 .section-title::after {
@@ -168,6 +169,7 @@ a.logo:hover {
   text-transform: uppercase;
   line-height: 1.2em;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .cervices-list-item p {
@@ -226,6 +228,8 @@ a.logo:hover {
 }
 
 .team-title-description {
+  font-family: var(--minor-font-two);
+  width: 100%;
   text-align: center;
   padding-bottom: 94px;
 }
@@ -246,7 +250,7 @@ a.logo:hover {
 .team-member-position {
   font-family: var(--minor-font-two);
   line-height: 24px;
-  margin-bottom: 16px;
+  margin: 14px 0 16px;
 }
 
 img {
@@ -269,10 +273,14 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 470px;
+  height: 100%;
   background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
   opacity: 0;
   visibility: hidden;
+}
+
+.team-list-item {
+  width: 378px;
 }
 
 .team-list-item:hover .team-list__item-img-wrapper {
@@ -299,11 +307,15 @@ img {
 .social-list-item-link {
   width: 56px;
   height: 56px;
-  background: var(--third-color);
+  background-color: var(--third-color);
   background-repeat: no-repeat;
   background-position: center;
   border: 1px solid rgb(255, 225, 255, 0);
   background-clip: padding-box;
+}
+
+.social-list-item-link:hover {
+  background-color: var(--main-color);
 }
 
 .icon-facebook {
@@ -375,18 +387,18 @@ img {
 .subscription-form-input {
   font-size: 15px;
   line-height: 24px;
-  color: var( --minor-font-two);
+  color: var(--main-font-color);
   font-family: var(--minor-font-two);
   font-weight: 300;
   font-style: italic;
-  font-size: 14px;
   text-align: left;
   height: 40px;
   width: 230px;
   border: 1px solid var(--form-color);
   border-right: none;
+  padding-left: 14px;
 }
 
-input::placeholder {
-  color: var(--form-color)
+.subscription-form-input::placeholder {
+  color: var( --form-color);
 }
