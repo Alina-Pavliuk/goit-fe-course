@@ -411,7 +411,9 @@ a.logo:hover {
   text-align: left;
 }
 
-.list-cervices__item-icon {
+.list-cervices__item::before {
+  content: "";
+  display: block;
   position: absolute;
   top: 0;
   left: 20px;
@@ -424,27 +426,27 @@ a.logo:hover {
   background-position: center;
 }
 
-.icon-alarm {
+.icon-alarm::before {
   background-image: url(../icons/alarm.svg);
 }
 
-.icon-line1111 {
+.icon-line1111::before {
   background-image: url(../icons/line1111.svg);
 }
 
-.icon-computer {
+.icon-computer::before {
   background-image: url(../icons/computer.svg);
 }
 
-.icon-book {
+.icon-book::before {
   background-image: url(../icons/book.svg);
 }
 
-.icon-home {
+.icon-home::before {
   background-image: url(../icons/home.svg);
 }
 
-.icon-image {
+.icon-image::before {
   background-image: url(../icons/image.svg);
 }
 
