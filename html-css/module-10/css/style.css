@@ -225,11 +225,11 @@ a.logo:hover {
   background-position: center;
 }
 
-.icon-shopping {
+.button--icon-shopping {
   background-image: url(../icons/shopping-menu.svg);
 }
 
-.icon-cart {
+.button--icon-cart {
   background-image: url(../icons/glass-menu.svg);
 }
 
@@ -252,9 +252,9 @@ a.logo:hover {
 /* <!--SECTION ONE--> */
 
 .banner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url(../images/banner.jpg);
-  background-image: -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../images/banner.jpg);
-  background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../images/banner.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../images/banner@2x.jpg);
+  background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../images/banner@2x.jpg);
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../images/banner@2x.jpg);
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -267,9 +267,9 @@ a.logo:hover {
 (-o-min-device-pixel-ratio: 2/1),
 (min-resolution: 192dpi) {
   .banner {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(243, 129, 129, 0.9)), to(rgba(252, 227, 138, 0.9))), url(../images/banner@2x.jpg);
-    background-image: -o-linear-gradient(bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../images/banner@2x.jpg);
-    background-image: linear-gradient(to top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url(../images/banner@2x.jpg);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(252, 227, 138, 0.9)), to(rgba(243, 129, 129, 0.9))), url(../images/banner@2x.jpg);
+    background-image: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../images/banner@2x.jpg);
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)), url(../images/banner@2x.jpg);
   }
 }
 
@@ -321,11 +321,16 @@ a.logo:hover {
   display: block;
 }
 
-.section-banner__button {
+.button {
   display: block;
   font-size: 14px;
-  color: var(--color-font-text-two);
   font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-font-text-two);
+}
+
+.section-banner__button {
   width: 160px;
   height: 42px;
   border: 3px solid var(--color-font-text-two);
@@ -366,6 +371,7 @@ a.logo:hover {
 
 .section__title-span {
   margin-bottom: 20px;
+  text-transform: none;
 }
 
 
@@ -406,7 +412,7 @@ a.logo:hover {
 }
 
 .list-cervices__item-text {
-  font-family: var(--main-font-family);
+  font-family: var(--text-font-family);
   line-height: 24px;
   text-align: left;
 }
@@ -426,27 +432,27 @@ a.logo:hover {
   background-position: center;
 }
 
-.icon-alarm::before {
+.list-cervices__item-icon--alarm::before {
   background-image: url(../icons/alarm.svg);
 }
 
-.icon-line1111::before {
+.list-cervices__item-icon--line1111::before {
   background-image: url(../icons/line1111.svg);
 }
 
-.icon-computer::before {
+.list-cervices__item-icon--computer::before {
   background-image: url(../icons/computer.svg);
 }
 
-.icon-book::before {
+.list-cervices__item-icon--book::before {
   background-image: url(../icons/book.svg);
 }
 
-.icon-home::before {
+.list-cervices__item-icon--home::before {
   background-image: url(../icons/home.svg);
 }
 
-.icon-image::before {
+.list-cervices__item-icon--image::before {
   background-image: url(../icons/image.svg);
 }
 
@@ -466,8 +472,8 @@ a.logo:hover {
   text-align: center;
 }
 
-.team__title-description {
-  font-family: var(--minor-font-two);
+.title-description {
+  font-family: var(--text-font-family);
   width: 100%;
   text-align: center;
   padding-bottom: 94px;
@@ -626,11 +632,6 @@ a.logo:hover {
   background: var(--teal-color);
   width: 150px;
   height: 40px;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
   padding: 0;
   -webkit-transition: 0.3s, linear;
   -o-transition: 0.3s, linear;
