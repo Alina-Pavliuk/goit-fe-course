@@ -1,0 +1,29 @@
+.section__title {
+  display: block;
+  font-family: $main-font-family;
+  font-size: 30px;
+  font-weight: 600;
+  color: $color-font-heading;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 105px;
+
+  &::after {
+    display: block;
+    content: "";
+    max-width: 60px;
+    height: 3px;
+    background: $pink-color;
+    text-transform: uppercase;
+    margin: 40px auto 0;
+  }
+}
+
+.section__title-span {
+  display: block;
+  font-family: $heading-font-family;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: none;
+}

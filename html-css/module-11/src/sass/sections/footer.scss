@@ -1,0 +1,57 @@
+.footer-page {
+  display: flex;
+  border-top: 1px solid $color-text-form;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.copy,
+.copy__link {
+  color: $color-font-heading;
+  font-weight: 400;
+}
+
+.copy__link {
+  color: $pink-color;
+  display: inline-block;
+}
+
+.subscription-form {
+  width: 380px;
+  display: flex;
+
+  &__button {
+    border: none;
+    background: $teal-color;
+    width: 150px;
+    height: 40px;
+    padding: 0;
+    transition: 0.3s, linear;
+
+    &:hover {
+      background: $pink-color;
+      box-shadow: 2px 2px 2px $color-text-form;
+    }
+  }
+
+  &__input {
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-font-heading;
+    font-family: $text-font-family;
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    height: 40px;
+    width: 230px;
+    border: 1px solid $color-text-form;
+    border-right: none;
+    padding-left: 14px;
+
+    &::placeholder {
+      color: $color-text-form;
+    }
+  }
+}
